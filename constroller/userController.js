@@ -16,14 +16,16 @@ const extractor = async (file) => {
 
 const getUsers = async (req, res) => {
     try {
-        const users = await User.find()
+        const users = await User.find().limit(req.query.limit).skip(+req.query.offset)
+        const count = await User.count();
+        console.log(count)
         // .sort({sheetNo:1})
-        res
-            .status(200)
+        res.status(200)
             .json({
 
                 status: 'Success',
-                users
+                users,
+                count,
             })
     } catch (err) {
         res.status(400).json({
@@ -69,7 +71,6 @@ const deleteUser = async(req, res) => {
 
 const createUser = async (req, res) => {
     await extractor(req.body.file)
-    console.log(rowsData)
     try {
         let data = []
         await rowsData.forEach((item, index) => {
