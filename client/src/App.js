@@ -8,7 +8,6 @@ function App() {
 
      <Router>
       <Routes >
-        {/* <Route path='/' component={Header} /> */}
         <Route element={<BasicExampleDataGrid/>}  path= '/' />
         <Route element={<Form/>}  path= '/Add' />
         <Route element={<Form/>}  path= '/Add/:id' />
