@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "declaration": false,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "sourceMap": true,
+    "noLib": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": "../../../../../Documents/GitHub/CRUD/clients/src",
+    "paths": {
+      "@pages": ["./pages/"],
+      "@core": ["./core/"],
+      "@pods": ["./pods/"],
+      "@common": ["./common/"],
+      "@assets": ["./assets/"],
+      "@state": ["./state/"]
+    },
+    "skipLibCheck": true
+  },
+  "compileOnSave": false,
+  "exclude": ["node_modules"]
+}

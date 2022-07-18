@@ -1,0 +1,500 @@
+.arabicView {
+  .discount{
+    margin-left: 0px !important;
+    margin-right: 15px;
+  }
+  .chatBot {
+    margin-left: 15px;
+
+    .text-right {
+      text-align: left !important;
+    }
+
+    .userDetails {
+      .pl-2 {
+        padding-left: 0rem !important;
+        text-align: right;
+        padding-right: 0.5rem;
+      }
+
+      .message {
+        margin-right: auto !important;
+        margin-left: 0px !important;
+      }
+
+      .mt-2 {
+        button {
+          margin-right: 0px !important;
+
+          &:first-child {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    .nav-tabs {
+      .nav-link {
+        img {
+          margin-right: 0px !important;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .bg-light-gray {
+    .rtl-float-left {
+      float: left;
+    }
+
+    .search-filters {
+      margin-left: 0px !important;
+      margin-right: auto;
+    }
+  }
+
+  .message-inner-section {
+    .mesage-view-hh {
+      .receiver {
+        .ml-2 {
+          margin-left: 0px !important;
+          margin-right: 0.5rem !important;
+        }
+
+        .msg {
+          border-radius: 15px 15px 0px 15px;
+        }
+      }
+
+      .writing {
+        img {
+          margin-left: 0.8rem !important;
+          margin-right: 0px !important;
+        }
+      }
+
+      .sender {
+        .mr-2 {
+          margin-left: 0.5rem !important;
+          margin-right: 0px !important;
+        }
+
+        .msg {
+          border-radius: 15px 15px 15px 0px;
+        }
+      }
+
+      .sender-main {
+        text-align: left;
+      }
+
+      .receiver-main {
+        text-align: right;
+      }
+    }
+  }
+
+  .message-send-inner {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+
+  .sidebar-navigation {
+    .userDetails {
+      .pl-2 {
+        padding-left: 0rem !important;
+        text-align: right;
+        padding-right: 0.5rem;
+      }
+    }
+
+    li {
+      text-align: initial;
+
+      img {
+        margin-right: 0px !important;
+        margin-left: 18px;
+      }
+
+      .arrowss {
+        float: left !important;
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  .search-bar-rounded {
+    padding: 4px 24px 4px 4px;
+  }
+
+  .stickyButton {
+    .ml-auto {
+      margin-right: auto !important;
+      margin-left: 0px !important;
+    }
+  }
+
+  .main-content {
+    .gallery {
+      text-align: right;
+    }
+
+    .about-info {
+      text-align: right;
+      padding-right: 0px !important;
+    }
+
+    .custom-card {
+      .card-body {
+        padding-right: 0px !important;
+        text-align: right !important;
+
+        .btn-lightgray {
+          margin-right: 0px !important;
+          margin-left: 11px;
+        }
+
+        .sm-show-data span:last-child {
+          text-decoration: none !important;
+        }
+
+        .share {
+          margin-right: .5rem !important;
+        }
+      }
+
+      .rtl_setting {
+        padding-right: 15px !important;
+
+        .card-body {
+          padding-right: 25px !important;
+          padding-left: 0px !important;
+        }
+      }
+    }
+  }
+
+  .nav_tabs_nav {
+    li {
+      a {
+        img {
+          margin-right: 0px !important;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .available-time,
+  .schedule,
+  .location {
+    text-align: right !important;
+  }
+
+  .main-gallery {
+    .text-right.mr-2.mt-3 {
+      text-align: left !important;
+    }
+
+    .slick-next {
+      left: auto !important;
+      right: 0px !important;
+    }
+
+    .slick-dots {
+      left: auto !important;
+      right: 0px !important;
+    }
+
+    .slick-prev {
+      left: auto !important;
+      right: 89px !important;
+    }
+  }
+
+  .patient-title {
+    text-align: right;
+  }
+
+  .sm-show-data {
+    span:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .listing-border {
+    .sm-rating {
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 15px;
+        width: 1px;
+        background-color: #e1e6eb;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .insurance {
+    text-align: right;
+  }
+
+  .rtl-slider {
+    .row {
+      flex-direction: row-reverse;
+      text-align: right;
+      justify-content: right;
+
+      .date {
+        justify-content: right;
+      }
+
+      .about-info {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .rtl_setting {
+    flex-direction: row-reverse;
+    align-items: center;
+
+    i {
+      margin-top: -2px;
+    }
+  }
+
+  .faq-panel {
+    .faq-panel-title {
+      text-align: right;
+    }
+
+    .row {
+      flex-direction: row-reverse;
+
+      .faq-accordion {
+        .accordion-item {
+          .accordion-header {
+            text-align: right;
+
+            a {
+              width: 100%;
+              display: flex;
+              cursor: pointer;
+            }
+
+            a:after {
+              float: left !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .offers {
+
+    .row,
+    .d-flex {
+      flex-direction: row-reverse;
+    }
+
+    .pricing {
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 15px;
+        width: 1px;
+        background-color: #e1e6eb;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .expires {
+      left: auto !important;
+      right: 13px !important;
+    }
+  }
+
+  .slider_adjust {
+    .slick-dots {
+      right: 15px !important;
+      max-width: 5% !important;
+    }
+
+    .about-info {
+      margin-left: auto;
+    }
+
+    .row {
+      flex-direction: row-reverse;
+      text-align: right;
+
+      .date {
+        justify-content: right;
+      }
+
+      .rating {
+        justify-content: left;
+        margin-left: 0px !important;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .calendar-left {
+    cursor: pointer;
+
+    .fa-chevron-left {
+      transform: rotate(180deg);
+      margin-top: -2px;
+      padding-right: 2px;
+    }
+  }
+
+  .calendar-right {
+    cursor: pointer;
+
+    .fa-chevron-right {
+      transform: rotate(180deg);
+      margin-top: -3px;
+      padding-left: 3px;
+    }
+  }
+
+  .footer-bar {
+    .row {
+      flex-direction: row-reverse;
+    }
+
+    .nextworks {
+      justify-content: left;
+    }
+
+    .input-group-footer {
+      flex-direction: row-reverse;
+
+      input {
+        text-align: left;
+      }
+    }
+  }
+
+  .arView {
+    text-align: right;
+  }
+
+  .appointment-base {
+    .ml-auto {
+      margin-right: auto;
+      margin-left: 0px !important;
+
+      .mr-1 {
+        margin-left: .25rem;
+      }
+
+      .ml-1 {
+        margin-right: .20rem;
+      }
+    }
+  }
+
+  .text-arabic-right {
+    text-align: right;
+  }
+
+  .search-filters {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+
+  .appointment-inner {
+    .nav-tabs {
+      .nav-link {
+        img {
+          margin-left: 10px;
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .navigation-appointment {
+    justify-content: right !important;
+
+    button {
+      transform: scale(-1);
+    }
+
+    h2 {
+      margin-left: 0px;
+      margin-right: 15px;
+      display: flex;
+    }
+  }
+
+  .sidebar-navigation {
+    .active {
+      &::before {
+        left: auto !important;
+        right: -3px;
+      }
+
+      &::after {
+        left: auto;
+        right: -35px;
+        transform: scale(-1) translateY(50%);
+      }
+    }
+
+  }
+
+  .video-record {
+    img {
+      left: unset;
+      right: 15px;
+    }
+  }
+
+  .appoiment-main-page-listing {
+    .sm-rating {
+      margin-left: 9px;
+      margin-right: 0px;
+    }
+
+  }
+
+}
+
+@media (min-width: 992px) {
+  .arabicView {
+    .appoiment-main-page-listing {
+      .pl-lg-1 {
+        padding-right: 0.25rem !important;
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .arabicView {
+    .appoiment-main-page-listing {
+      .pr-md-2 {
+        padding-left: 0.5rem !important;
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
