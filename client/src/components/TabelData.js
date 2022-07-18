@@ -19,9 +19,9 @@ export default function BasicExampleDataGrid() {
     (async () => {
       setPageState(prev => ({ ...prev, isLoading: true }))
       /* */
-      const data = await axios.get(`http://localhost:5000/api/v1/user?offset=${pageState.page}&limit=${pageState.pageSize}`)
+      const data = await axios.get(`http://localhost:5000/api/property?offset=${pageState.page}&limit=${pageState.pageSize}`)
 console.log(data)
-      setPageState(prev => ({ ...prev, isLoading: false, data: data.data.users, total: data.data.count }))
+      setPageState(prev => ({ ...prev, isLoading: false, data: data.data.data, total: data.data.count }))
     })()
   }, [pageState.pageSize, pageState.page])
 
@@ -81,11 +81,11 @@ console.log(data)
 
     }
     else if (e.field === "Delete") {
-      await axios.delete(`http://localhost:5000/api/v1/user/${e.id}`).then(async (res) => {
-        const data = await axios.get(`http://localhost:5000/api/v1/user?offset=${pageState.page}&limit=${pageState.pageSize}`)
+      await axios.delete(`http://localhost:5000/api/property/${e.id}`).then(async (res) => {
+        const result = await axios.get(`http://localhost:5000/api/v1/user?offset=${pageState.page}&limit=${pageState.pageSize}`)
 
 
-        setPageState(prev => ({ ...prev, isLoading: false, data: data.data.users, total: data.data.count }))
+        setPageState(prev => ({ ...prev, isLoading: false, data: result.data.data, total: result.data.count }))
 
 
       }).catch(err => {

@@ -1,30 +1,17 @@
-import readXlsxFile from 'read-excel-file/node'
-import User from '../model/userModel.js'
-var rowsData = []
-// File path.
-const extractor = async (file) => {
-    await readXlsxFile(`./uploads/${file}`).then((rows) => {
-        rows.map((_, index) => {
-            if (index > 1) {
-                rowsData = [...rowsData, _]
-            }
-        })
-    })
-}
+import Property from '../model/propertyModel.js'
+import { extractor } from '../helper/extractor.js'
 
-
-
-const getUsers = async (req, res) => {
+const getProperties = async (req, res) => {
     try {
-        const users = await User.find().limit(req.query.limit).skip(+req.query.offset)
-        const count = await User.count();
-        console.log(count)
+        const data = await Property.find().limit(req.query.limit).skip(+req.query.offset)
+        const count = await Property.count();
+     
         // .sort({sheetNo:1})
         res.status(200)
             .json({
 
                 status: 'Success',
-                users,
+                data,
                 count,
             })
     } catch (err) {
@@ -35,13 +22,13 @@ const getUsers = async (req, res) => {
     }
 }
 
-const getUser = async (req, res) => {
+const getProperty = async (req, res) => {
     try {
-        const user = await User.findOne({_id:req.params.id})  // IS Equal to = user.findOne({_id: req.params.id})
+        const Property = await Property.findOne({_id:req.params.id})  // IS Equal to = Property.findOne({_id: req.params.id})
         res.status(200).json({
             status: 'Success',
             data: {
-                user: user
+                data: Property
             }
         })
     } catch (err) {
@@ -53,9 +40,9 @@ const getUser = async (req, res) => {
 
 }
 
-const deleteUser = async(req, res) => {
+const deleteProperty = async(req, res) => {
     try {
-          await User.findOneAndDelete({_id:req.params.id})  // IS Equal to = user.findOne({_id: req.params.id})
+          await Property.findOneAndDelete({_id:req.params.id})  // IS Equal to = Property.findOne({_id: req.params.id})
         res.status(200).json({
             status: 'Success',
             
@@ -69,10 +56,11 @@ const deleteUser = async(req, res) => {
     
 }
 
-const createUser = async (req, res) => {
-    await extractor(req.body.file)
+const createProperty = async (req, res) => {
+    const rowsData = await extractor(req.body.file)
     try {
         let data = []
+    // static object 
         await rowsData.forEach((item, index) => {
             data.push({
                 sheetNo: item[0],
@@ -93,22 +81,24 @@ const createUser = async (req, res) => {
 
             })
         })
-        const user = await User.create(data)
+ 
+        const result = await Property.create(data)
+
         res.status(200).json({
             success: 'Success',
-            user
+            data:result
         })
 
 
     } catch (err) {
         res.status(400).json({
             success: 'Fail',
-            message: 'InValid Data sent!'
+            message: err.message
         })
     }
 }
 
-const createOneUser = async (req, res) => {
+const createOneProperty = async (req, res) => {
     const {
         sheetNo,
         catg,
@@ -127,7 +117,7 @@ const createOneUser = async (req, res) => {
         mem
     } = req.body
     try {
-        const user = await User.create({
+        const result = await Property.create({
             sheetNo,
             catg,
             type,
@@ -146,21 +136,21 @@ const createOneUser = async (req, res) => {
         })
         res.status(200).json({
             success: 'Success',
-            user
+            data: result
         })
 
 
     } catch (err) {
         res.status(400).json({
             success: 'Fail',
-            message: 'InValid Data sent!'
+            message: err.message
         })
     }
 }
 
-const updateUser = async (req, res) => {
+const updateProperty = async (req, res) => {
     try {
-        const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+        const Property = await Property.findByIdAndUpdate(req.params.id, req.body, {
             new: true
         })
         res.status(200).json({
@@ -174,8 +164,7 @@ const updateUser = async (req, res) => {
     }
 }
 
-const tourContoller = {
-    getUser, getUsers, deleteUser, updateUser, createUser,createOneUser
+export const propertyController = {
+    getProperty, getProperties, deleteProperty, updateProperty, createProperty,createOneProperty
 }
 
-export default tourContoller

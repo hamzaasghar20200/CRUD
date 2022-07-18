@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const userSchema = new mongoose.Schema({
+const PropertySchema = new mongoose.Schema({
     sheetNo:{
         type:Number
     }, 
@@ -49,6 +49,6 @@ const userSchema = new mongoose.Schema({
    
   })
   
-  const User = mongoose.model('DHA', userSchema)
+  const Property = mongoose.model('property', PropertySchema)
 
-  export default User
+  export default Property

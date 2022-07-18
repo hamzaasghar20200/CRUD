@@ -1,0 +1,25 @@
+
+
+One enrtry in db_connections
+{
+    "_id": ObjectId("62b98a78db49d370ed52ec19"),
+    "db_url": [
+        "localhost:27017"
+    ],
+    "cron_codes": [],
+    "status": "A",
+    "created_by": ObjectId("62b98a78db49d370ed52ec17"),
+    "last_modified_by": ObjectId("62b98a78db49d370ed52ec18"),
+    "short_code": "talkkticket",
+    "company_name": "Ticket",
+    "company_id": ObjectId("62b98a73db49d370ed52ebfd"),
+    "group_id": ObjectId("62b98a74db49d370ed52ec07"),
+    "access_token": "etOdMstcGqIfLnnP",
+    "db_collection": "TALKK7-tick-1656326771321",
+    "created_at": ISODate("2022-06-27T10:46:16.011Z"),
+    "updated_at": ISODate("2022-06-27T10:46:16.011Z"),
+    "_rev": 0
+}
+talkkticket
+talkk_ticket@yopmail.com
+Pass@1234

@@ -7,32 +7,30 @@ const multerStorage  = multer.diskStorage({
     destination: (req, file, cd) => {
         cd(null, 'uploads')
     }, 
-    fileFilter : function (req, file, callback) {
-        var ext = path.extname(file.originalname);
-        if(ext !== '.xlsx') {
-            return callback(new Error('Only xlsx'))
-        }
-        callback(null, true)
-    },
-    filename: (req, file, cd) => {
-        console.log(file)
-        cd(null , `${file.originalname}`)
-    }
 })
 
 
 const upload = multer({
-    storage: multerStorage
-})
+    storage: multerStorage,
+    fileFilter: (req, file, cb) => {
+        if (file.mimetype == "xlsx")  {
+          cb(null, true);
+        } else {
+          cb(null, false);
+          
+        }
+      }
+    })
+
   
 const uploadfileMiddleware = upload.single('file')
-const uploadFile = async (req, res) =>{
-   const filename = req.file.filename
-   req.body.path = filename
-   const newTour = await File.create(req.body)
-    res.status(200).json({
-        status: 'success'
-    })
+
+const uploadFile = async (e,req, res,err) => {
+//    const filename = req.body.file
+//    req.body.path = filename
+ console.log(err)
+
+   
 }
 
 const getfile = (req, res) => {

@@ -3,10 +3,8 @@ import './App.css';
 import Form from './components/Form/Form.js';
 import BasicExampleDataGrid from './components/TabelData';
 function App() {
-  console.log("first")
   return (
     <div className="App">
-
      <Router>
       <Routes >
         <Route element={<BasicExampleDataGrid/>}  path= '/' />
