@@ -1,0 +1,1012 @@
+.arabicView {
+    * {
+        text-align: right;
+    }
+
+    .reverse-img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .doctor_title {
+        text-align: right;
+    }
+
+    .text-left {
+        text-align: right !important;
+    }
+
+    .doctor-search-page {
+        .provider-text {
+            text-align: right;
+        }
+
+        .sort-by-panel {
+            margin: 0 2.5rem 0 0;
+        }
+
+        .mediaObject {
+            .address-panel {
+                span:first-child {
+                    margin-right: 0px;
+                    margin-left: 20px;
+
+                    &::after {
+                        right: unset;
+                        left: -15px;
+                    }
+                }
+            }
+        }
+
+        .mediaObjectActionsPanel {
+            i {
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+        }
+
+        .see-related {
+            i.ic-chevron-right {
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+        }
+
+        .filteration-hh-listing-doc {
+            .ic-reset {
+                margin-left: 0.25rem !important;
+                margin-right: 0rem !important;
+            }
+
+            .ic-down-arrow,
+            .ic-up-arrow {
+                margin-left: 1rem;
+                margin-right: 0rem;
+            }
+
+            .form-radio-input {
+                margin-left: 10px;
+                margin-right: 0px !important;
+            }
+        }
+
+        .nav-link-body {
+            li {
+                span {
+                    margin-right: 5px;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+    .comparison {
+        left: unset;
+        right: 0 !important;
+
+        .mr-2 {
+            margin-left: 0.5rem !important;
+            margin-right: 0 !important;
+        }
+
+        .appointment-days-list {
+            position: relative;
+
+            .slick-next {
+                left: -17px;
+                right: unset;
+            }
+
+            .slick-prev {
+                left: unset;
+                right: -14px;
+            }
+        }
+
+        .doctor-comparison {
+            .comparision-main-row--hhh {
+                margin: 0 !important;
+
+                .sidebar-comparision-table,
+                .compare-doc-img-hh,
+                .doctor-comparison-book-main-hh {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+
+                .compare-doc-img-hh+div {
+                    padding-right: 10px !important;
+
+                    i {
+                        margin-left: 7px;
+                        margin-right: 0px;
+                    }
+                }
+
+                .intro,
+                .intro1,
+                .intro2 {
+                    justify-content: unset;
+                }
+
+                .doctor-comparison-book {
+                    margin: 0 !important;
+
+                    .banner-header {
+                        img {
+                            float: left !important;
+                        }
+                    }
+
+                    .pricing {
+                        span {
+                            display: inline-block;
+                        }
+
+                        .discount {
+                            margin-right: 15px;
+                            margin-left: 0px;
+                        }
+                    }
+
+                    .reviews {
+                        margin-left: 0rem !important;
+                        margin-right: 0.5rem !important;
+                    }
+
+                    .insurance {
+                        img {
+                            margin-left: 8px;
+                            margin-right: 0px;
+                        }
+                    }
+
+                    .examination-type-hh-detail {
+                        span.examination-type-hh-Online {
+                            span {
+                                margin-left: 0 !important;
+                                margin-right: 8px !important;
+                            }
+                        }
+
+                        span.examination-type-hh-clinic {
+                            span {
+                                margin-left: 16px !important;
+                                margin-right: 8px !important;
+                            }
+                        }
+                    }
+
+                    .booking-button-hh {
+                        img {
+                            -webkit-transform: scaleX(-1);
+                            transform: scaleX(-1);
+                            margin-right: 12px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .sidebar-form-stepper-main {
+            border-radius: 0px 16px 16px 0px;
+
+            .doctor-work {
+                i {
+                    margin-right: 0 !important;
+                    margin-left: 7px;
+                }
+            }
+
+            .pricing-Setting {
+
+                .discount {
+                    margin-right: 15px !important;
+                    margin-left: 0 !important;
+                }
+
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .mainPanel {
+
+            .nav_tabs_nav1 {
+                li {
+                    a {
+                        img {
+                            margin-left: 10px;
+                            margin-right: 0px;
+                            -webkit-transform: scaleX(-1);
+                            transform: scaleX(-1);
+                        }
+                    }
+                }
+            }
+
+            .step2 {
+                .add-patient-hh {
+                    .custom-select {
+                        background-position: left 15px center;
+                        padding-right: 0 !important;
+                        padding-left: 34px;
+                    }
+
+                    .cancel-btn-add-paitient-form {
+                        i.fa-times {
+                            margin-right: 0 !important;
+                            margin-left: 0.25rem;
+                        }
+                    }
+
+                    .input-repend-hh {
+                        input {
+                            padding-right: 1rem !important;
+                            padding-left: 1.5rem !important;
+                        }
+
+                        .over-img-icon-hh {
+                            right: unset;
+                            left: 17px;
+                        }
+                    }
+                }
+            }
+
+            .step3 {
+                .nav_tabs_nav1 {
+                    justify-content: unset;
+                }
+
+                .h-40-input {
+                    .input-repend-hh {
+                        .over-img-icon-hh {
+                            right: unset;
+                            left: 17px;
+                        }
+
+                        input {
+                            padding-right: 16px !important;
+                            padding-left: 35px !important;
+                        }
+
+                        input[type="date"],
+                        input[type="month"] {
+                            padding-left: 10px !important;
+                            padding-right: 10px !important;
+                        }
+                    }
+                }
+            }
+
+
+            .detail-form-step-1-hh {
+                .chossing-booking-hh {
+                    .avaiable-time-list-hh-timming {
+                        padding-right: 0 !important;
+                        padding-left: 15px !important;
+                    }
+
+                    .avaiable-time-list-hh-btn-chosse {
+                        padding-left: 0 !important;
+                        padding-right: 15px !important;
+
+                        button {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .conformation-step-form-hh {
+            .conformation-img {
+                img {
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                }
+            }
+
+            .conformation-cards {
+                .arrow-right {
+                    right: unset;
+                    left: 19px;
+                    -webkit-transform: scaleX(-1) translateY(-50%);
+                    transform: scaleX(-1) translateY(-50%);
+                }
+
+                .card-1-hh-detail {
+                    margin-right: 0 !important;
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .faq-panel {
+        .faq-panel-row-main-hh {
+            flex-direction: row-reverse;
+        }
+
+        .accordion {
+            .accordion-header {
+                a {
+                    max-width: 100%;
+                    padding-left: 28px;
+                    position: relative;
+                    display: block;
+
+                    &:after {
+                        position: absolute;
+                        left: 1px;
+                        right: unset;
+                        height: 20px !important;
+                        width: 20px !important;
+                        font-size: 13px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    .designation-doc-hh {
+        i {
+            margin-right: 0;
+            margin-left: 3px;
+        }
+    }
+
+    input[type="date"],
+    input[type="month"] {
+        &::-webkit-calendar-picker-indicator {
+            background: transparent url(./images/ic-calendar-green.svg) no-repeat left center;
+        }
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .span-block-main-hh {
+        span {
+            display: inline-block;
+        }
+    }
+
+    .calendar-right,
+    .calendar-left {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .single-listing-doctor {
+        >div {
+            &:first-child {
+                padding-right: 0px !important;
+                padding-left: 15px !important;
+            }
+        }
+
+        .paitent-number--hh {
+            border-left: 0 !important;
+            border-right: 1px solid;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+
+        .sm-rating {
+            margin-left: 9px !important;
+            margin-right: 0 !important;
+        }
+    }
+
+    .single-clinic-detail {
+        .clinic-detail {
+            padding-right: 0.5rem !important;
+            padding-left: 0rem !important;
+        }
+
+        .sm-rating {
+            margin-left: 10px;
+            margin-right: 0 !important;
+        }
+
+        .border-left.doctors-in-clinic,
+        .border-left.specialist-in-clinic {
+            border-left: 0 !important;
+            border-right: 1px solid;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+
+        span.rank {
+            margin-left: 15px;
+            margin-right: 0 !important;
+        }
+    }
+
+    .mr-1 {
+        margin-right: 0rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .staper {
+        li {
+            margin-left: 50px;
+            margin-right: 0px !important;
+
+            &::before {
+                left: 32px !important;
+            }
+
+            &:last-child {
+                margin-left: 0px !important;
+            }
+        }
+    }
+
+    .step-reviews {
+        .review-heading {
+            h5 {
+                img {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .offerTemplate {
+        .offer-search-box {
+            padding: 5px 15px 5px 5px;
+        }
+
+        .offer-cards-hhh {
+            padding-left: 0rem !important;
+            padding-right: 0.5rem !important;
+        }
+
+        .mr-2,
+        .mx-2 {
+            margin-left: 0.5rem !important;
+            margin-right: 0rem !important;
+        }
+
+        .main-gallery {
+            .slick-dots {
+                right: 21px !important;
+            }
+        }
+
+        .position_setting {
+            .doctor_title {
+                text-align: right !important;
+            }
+
+            .fa-chevron-right {
+                &:before {
+                    content: "\f054";
+                }
+            }
+
+            .doctor-option {
+                span {
+                    &:last-child {
+                        padding-left: 0px !important;
+                        padding-right: 8px !important;
+                        border-left: 0 !important;
+                        border-right: 1px solid #e1e6eb !important;
+                        margin-left: 0 !important;
+                        margin-right: 8px !important;
+                    }
+                }
+            }
+
+            .description {
+                a {
+                    display: inline-block;
+                }
+            }
+
+            .consultation {
+                span {
+                    display: inline-block;
+                    margin-left: 0 !important;
+                    margin-right: 7px;
+                }
+            }
+
+            .doc-detail-des-card-hhh {
+                padding-right: 0px !important;
+                padding-left: 15px !important;
+            }
+
+            .mobileview-popup .accordion .accordion-header a:after,
+            .mobileview-popup .accordion .accordion-header a.collapsed:after {
+                left: 0;
+                right: unset;
+            }
+        }
+
+    }
+
+    .userDetails {
+
+        .dropdown-dots {
+            span {
+                width: max-content;
+            }
+        }
+    }
+
+    .notificaation-popup-hh {
+        .modal-dialog {
+            margin-left: 204px;
+            margin-right: auto;
+        }
+
+        .dropdown-dots {
+            .message {
+                margin-left: unset;
+                margin-right: auto;
+            }
+        }
+
+        .chatBot.mine-hhh {
+            margin-left: 0;
+        }
+
+        .msg-detail-hh-msg-notification {
+            padding-right: 0.5rem !important;
+            padding-left: 0rem !important;
+        }
+
+        .remove-notification {
+            left: 0px;
+            right: 5px;
+        }
+    }
+
+    .chat-type-derop-down-hh {
+        img.mr-2 {
+            margin-right: 0rem !important;
+            margin-left: 0.5rem !important;
+        }
+    }
+
+    .chat-boot-sidebar-main-hhh-wraper {
+        padding-left: 0 !important;
+    }
+
+    .message-inner-section {
+        .message-send-main {
+            .message-send-inner {
+                .microphone-record-msg {
+                    right: unset;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .appointment-base {
+        .reschedule-appoiment {
+            margin-left: 0rem !important;
+            margin-right: 0.25rem !important;
+        }
+
+        .reschedualing-main-col-wrap-hh {
+            margin-left: 0 !important;
+            margin-right: auto;
+        }
+    }
+
+    .app-ads-img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .reviewsRating {
+        .rate {
+            >label {
+                float: left;
+            }
+
+            label.half {
+                margin-left: -16px;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    .social-btn-hh-1 {
+        .mr-3 {
+            margin-right: 0rem !important;
+            margin-left: 1rem !important;
+        }
+    }
+
+    .paitient-dashboard-inner {
+        .doctor-work {
+            justify-content: end;
+        }
+
+        .upcoming-appointment-slider {
+
+            .detailing-hh-single-doctor {
+                direction: rtl;
+            }
+
+            .single-listing-doctor {
+                .doctor-imag-main-hhh {
+                    .doctor-imag-single-hh {
+                        padding-right: 0px;
+                    }
+                }
+
+
+                .appoitment-date--hh {
+
+                    border-right: 1px solid;
+                    margin-right: 5px;
+                    padding-right: 5px;
+                    padding-left: 0 !important;
+                    margin-left: 0 !important;
+                    border-left: 0 !important;
+
+                }
+
+                .map-appointment {
+                    direction: rtl;
+
+                    .clinic img {
+                        padding-right: 0;
+                        padding-left: 3px;
+                    }
+
+                    .map-inner {
+                        margin-left: unset;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+
+        .main-gallery {
+            .slick-slide {
+                img {
+                    padding-right: 0px;
+                }
+            }
+        }
+
+        .offer-slider-hhhh {
+            direction: rtl;
+
+            .doctor-aabout-hhh {
+                direction: ltr;
+            }
+
+            .doctor-work {
+                direction: rtl;
+                margin-inline-end: auto;
+            }
+        }
+    }
+
+    .offer-card-hhh {
+        .offer-cards-hhh {
+            padding-right: 0.5rem !important;
+            padding-left: 0rem !important;
+        }
+
+        .expires {
+            left: unset;
+            right: 13px;
+        }
+    }
+
+    .text-center {
+        * {
+            text-align: center;
+        }
+    }
+    .Prescriptions-Medical-Reports-main-page-listing{
+        .mr-2{
+            margin-left: 0.5rem !important;
+            margin-right: 0rem !important;
+        }
+        .pl-3 {
+            padding-right: 1rem !important;
+            padding-left: 0rem !important;
+        }
+        .arrow-medica-card{
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        .pl-4 {
+            padding-right: 1.5rem !important;
+            padding-left: 0 !important;
+        }
+    }
+    .dot-circle-orange {
+        left: unset;
+        right: 0;
+    }
+    .Prescriptions-Medical-Reports-main-page-listing{
+        .mr-2{
+            margin-left: 0.5rem !important;
+            margin-right: 0rem !important;
+        }
+        .pl-3 {
+            padding-right: 1rem !important;
+            padding-left: 0rem !important;
+        }
+        .arrow-medica-card{
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        .pl-4 {
+            padding-right: 1.5rem !important;
+            padding-left: 0 !important;
+        }
+    }
+    .dot-circle-orange {
+        left: unset;
+        right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .doctor_title {
+        text-align: right;
+    }
+}
+
+@media (max-width: 767px) {
+    .arabicView {
+        .comparison {
+            .mainPanel {
+                .heading-stepper {
+                    text-align: right !important;
+                }
+
+                .step3 {
+                    .payment-3-hh {
+                        * {
+                            order: unset !important;
+                        }
+
+                        .card-payment-main-hh {
+                            padding-top: 32px !important;
+                        }
+                    }
+                }
+
+                .step2 {
+                    .patient-type-card-hh {
+                        .patient-single-type-card-1-hh {
+                            padding-right: 0rem !important;
+                            padding-left: 0.5rem !important;
+                        }
+
+                        .patient-single-type-card-2-hh {
+                            padding-right: 0.5rem !important;
+                            padding-left: 0rem !important;
+                        }
+                    }
+                }
+            }
+
+            .doctor-comparison-mobile-hh-main {
+                .banner-header {
+                    h2 {
+                        border-left: 0;
+                        border-right: 0;
+                        border-top: 0;
+
+                        img {
+                            float: left !important;
+                        }
+                    }
+                }
+
+                .intro {
+                    justify-content: unset;
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+
+                    img {
+                        margin-left: 5px !important;
+                        margin-right: 0px !important;
+                        max-width: 16px
+                    }
+                }
+
+                .pricing {
+                    span {
+                        display: inline-block;
+                    }
+
+                    .discount {
+                        margin-right: 15px !important;
+                        margin-left: 0px !important;
+                    }
+                }
+
+                .appointment-days-list {
+                    i {
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+                        margin-left: 0 !important;
+                        margin-right: 10px;
+                    }
+                }
+
+                .doctor-comparison-book>div {
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+
+                    >.px-2 {
+                        padding-left: 15px !important;
+                        padding-right: 15px !important;
+                    }
+
+                    >.row {
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
+                }
+
+                .reservation-main-hh {
+                    .type-reservation {
+                        display: inline-block;
+                    }
+                }
+
+                .doctor-intro-comparision-hh-main-row>div {
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+
+                    i {
+                        margin-right: 0 !important;
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+
+        .mobileView.doctor-search-page-mobile {
+            .accordion {
+                .accordion-header {
+                    a {
+                        max-width: 100%;
+                        padding-left: 28px;
+
+                        &:after {
+                            left: 0px;
+                            right: unset;
+                            height: 20px !important;
+                            width: 20px !important;
+                            font-size: 13px;
+                            top: 0px;
+                            transform: unset;
+                        }
+                    }
+                }
+            }
+        }
+
+        .doctor-lisinting-card-hh {
+            .doctor-lisinting-card-hh-row>div {
+                padding: 0px 10px;
+            }
+
+            .doctor-lisinting-card-hh-row {
+                .mobile-doctor-link {
+                    padding: 0;
+
+                    .fa-chevron-down {
+                        margin-right: 6px !important;
+                        margin-left: 0 !important;
+                    }
+                }
+
+                .doctor_list {
+                    span {
+                        display: inline-block;
+                    }
+                }
+
+                .doctor-option {
+                    span:last-child {
+                        margin-left: 0px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .step-reviews {
+            .single-listing-doctor {
+                >div {
+                    &:first-child {
+                        padding-left: 12px !important;
+                    }
+                }
+
+                .doctor_title {
+                    text-align: right;
+                }
+            }
+        }
+
+        .mobileView.offerTemplate {
+            .offer-banner {
+                h1 {
+                    text-align: right;
+                }
+            }
+
+            .doctor-section-hh {
+                justify-content: right !important;
+            }
+
+            .offer-search-box {
+                padding-left: 15px !important;
+                padding-right: 10px !important;
+            }
+
+            .fa-angle-right &:before {
+                content: "\f104";
+            }
+        }
+
+        .position_setting {
+            .offer-main-title-hhh {
+                .fa-chevron-left {
+                    &:before {
+                        content: "\f054";
+                        vertical-align: -7px;
+                        padding-left: 7px;
+                    }
+                }
+            }
+
+            .mobileTabs {
+                .nav-item {
+                    a {
+                        text-align: center !important;
+                    }
+                }
+            }
+        }
+
+        .appointment-detail {
+            // .detailing-hh-single-doctor {
+            //     margin-right: calc(-25% - 1.5rem);
+            //     margin-left: unset;
+            // }
+
+            .review-step-form {
+                .detailing-hh-single-doctor {
+                    margin-right: unset;
+                }
+            }
+
+            .doctor-details-card-hhhh {
+                padding: 0 !important;
+            }
+        }
+    }
+}
