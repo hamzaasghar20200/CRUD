@@ -42,18 +42,7 @@ const rhizoApiConfig = {
   payouts: "/payout-transaction/",
   payoutReceipts: "/payout-receipt/",
   studentBilling: "/invoice/",
-  createUser: `${process.env.baseURL}v1.php/cloud/users`,
-  getRooms: `${process.env.baseURL}v2.php/apps/spreed/api/v4/room`,
-  sendMessages: `${process.env.baseURL}v2.php/apps/spreed/api/v1/chat/7yspxrwg`,
-  getMessages: `${process.env.baseURL}v2.php/apps/spreed/api/v1/chat/`,
-  fileUpload: `https://876wfo0sjl.execute-api.me-south-1.amazonaws.com/remote.php/dav/files/`,
-  sendFile: `${process.env.baseURL}v2.php/apps/files_sharing/api/v1/shares`,
-
-  authLogin: `${process.env.authBaseUrl}/auth/login`,
-  authSignup: `${process.env.authBaseUrl}/auth/register`,
-  authForgetPassword: `${process.env.authBaseUrl}/auth/forgot-password`,
-
-
+  getSociety: "http://localhost:5000/api/society",
 };
 
 // const rhizoMockApiConfig = {

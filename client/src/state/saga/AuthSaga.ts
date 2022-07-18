@@ -6,7 +6,7 @@ import { requestAuthFrogetPasswordError, requestAuthFrogetPasswordSuccess, reque
 import axios from 'axios';
 import jwt_decode from "jwt-decode";
 import { push } from 'connected-react-router';
-import { requestSocietyDataSuccess } from '../state/AuthState';
+import { requestSocietyDataSuccess } from '../state/SocietyState';
 export const AuthHeader = {
     'accept': 'application/json',
     'Content-Type': 'application/json',

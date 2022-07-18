@@ -1,12 +1,12 @@
 import { combineReducers, ReducersMapObject } from 'redux';
-import { AuthState, authReducer } from './AuthState';
+import { SocietyState, societyReducer } from './SocietyState';
 import { ChatState, chatReducer } from './ChatState';
 import { testScanReducer, TestScanState } from './TestScanState';
 import { AuthStateApi, authReducerApi } from './AuthStateAPI';
 
 
 export type RootState = {
-    authState: AuthState;
+    societyState: SocietyState;
     authStateApi: AuthStateApi;
     chatState: ChatState;
     testScanState: TestScanState;
@@ -14,7 +14,7 @@ export type RootState = {
 };
 
 const reducerMap: ReducersMapObject<any, any> = {
-    authState: authReducer,
+    societyState: societyReducer,
     authStateApi: authReducerApi,
     chatState: chatReducer,
     testScanState: testScanReducer,

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
 import {
   requestSocietyData, requestSocietyDataSuccess
-} from "../../state/state/AuthState";
+} from "../../state/state/SocietyState";
 export const Block = () => {
   const [createSociety, setIsCreateSociety] = useState(false);
   const [isName, setIsName] = useState("");

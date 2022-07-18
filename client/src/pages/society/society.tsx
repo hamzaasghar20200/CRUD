@@ -1,19 +1,18 @@
 import { CButton, CModal, CModalBody, CModalHeader } from "@coreui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import {default as UUID} from "node-uuid";
 import {
-  AuthState,
-   requestSocietyDataSuccess
-} from "../../state/state/AuthState";
+  SocietyState,
+   requestSocietyDataSuccess,
+   requestSocietyData,
+   requestCreateSocietyData
+} from "../../state/state/SocietyState";
 import { RootState } from "../../state/state/RootReducer";
 import { Link } from "react-router-dom";
 export const Society = () => {
-  const { societies } = useSelector<RootState, AuthState>(
-    (state) => state.authState
+  const { societies } = useSelector<RootState, SocietyState>(
+    (state) => state.societyState
   );
-  console.log(societies)
- const htmlId = UUID();
   const [createSociety, setIsCreateSociety] = useState(false);
   const [isName, setIsName] = useState("");
   const [isLoaction, setIsLocation] = useState("");
@@ -29,26 +28,20 @@ const dispatch = useDispatch()
 
   function onSubmit(e:any){
     e.preventDefault();
-    // let data = {
-    //   id: htmlId,
-    //   name: isName,
-    //   location: isLoaction,
-    //   image: isFile,
-    //   description: isDec,
-    // }
-    let formData = new FormData();
-    formData.append('id', htmlId),
-    formData.append('name', isName),
-    formData.append('location', isLoaction),
-    formData.append('file', isFile),
-    formData.append('message', isDec)
-    let formObject = Object.fromEntries(formData.entries());
-    console.log(formObject);
-    dispatch(requestSocietyDataSuccess(formObject))
+    let data = {
+      name: isName,
+      location: isLoaction,
+      // image: isFile,
+      ownerName: isDec,
+    }
+    dispatch(requestCreateSocietyData(data))
     if(societies.length > 0){
       setIsCreateSociety(false);
     }
   }
+  useEffect(() => {
+    dispatch(requestSocietyData({}))
+  }, [dispatch]);
   return (
     <>
       <div className="text-right py-4">
@@ -83,7 +76,7 @@ const dispatch = useDispatch()
                 />
                 <textarea
                   placeholder="Message"
-                  name="message"
+                  name="ownerName"
                   rows={10}
                   onChange={(e) => setIsDec(e.target.value)}
                 ></textarea>
@@ -103,7 +96,8 @@ const dispatch = useDispatch()
       <div className="container-fluid">
         <div className="row mt-5 pt-5">
           {societies.map((society, index) => (
-          <div className="col-lg-4">
+            
+          <div className="col-lg-4 mb-5 pb-lg-5" key={`skhjdhsd-${index}`}>
             <div className="card-wrapper">
               <div className="user-pic">
                 <img
@@ -116,61 +110,18 @@ const dispatch = useDispatch()
               </div>
               <div className="social-details">
                 <div className="followers">
-                    <p className="px-3">{society.description}</p>
-                  <h3 className="font-18"><span className="font-14 text-muted">Address: </span> {society.location}</h3>
+                    <p className="px-3">{society.ownerName}</p>
+                  <h3 className="font-18"><span className="font-14 text-muted">Address: </span> {society.address}</h3>
                 </div>
               </div>
               <div className="card-btn">
                 <Link to={`/society=${society.id}`}>
-                <button type="button" className="w-100">Read More</button></Link>
+                <button type="button" className="w-100">Read More</button>
+                </Link>
               </div>
             </div>
           </div>
           ))}
-          <div className="col-lg-4">
-            <div className="card-wrapper">
-              <div className="user-pic">
-                <img
-                  src="https://images.unsplash.com/photo-1554126807-6b10f6f6692a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
-                />
-              </div>
-              <div className="name">
-                <h3 className="pt-2">Lorem Ipsum</h3>
-              </div>
-              <div className="social-details">
-                <div className="followers">
-                    <p className="px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque molestias, velit odit reprehenderit, unde obcaecati atque</p>
-                  <h3 className="font-18"><span className="font-14 text-muted">Address: </span> jkas askljs aks</h3>
-                </div>
-              </div>
-              <div className="card-btn">
-                <button type="button" className="w-100">Read More</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="card-wrapper">
-              <div className="user-pic">
-                <img
-                  src="https://images.unsplash.com/photo-1554126807-6b10f6f6692a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
-                />
-              </div>
-              <div className="name">
-                <h3 className="pt-2">Lorem Ipsum</h3>
-              </div>
-              <div className="social-details">
-                <div className="followers">
-                    <p className="px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque molestias, velit odit reprehenderit, unde obcaecati atque</p>
-                  <h3 className="font-18"><span className="font-14 text-muted">Address: </span> jkas askljs aks</h3>
-                </div>
-              </div>
-              <div className="card-btn">
-                <button type="button" className="w-100">Read More</button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
